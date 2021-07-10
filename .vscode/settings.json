@@ -1,0 +1,15 @@
+{
+    "spellright.language": [
+        "English (British)"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
+    "spellright.parserByClass": {
+        "objectpascal": {
+            "parser": "plain"
+        }
+    }
+}

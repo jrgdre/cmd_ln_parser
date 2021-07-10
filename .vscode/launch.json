@@ -1,0 +1,19 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "GDB win 64",
+            "type": "by-gdb",
+            "request": "launch",
+            "debuggerPath": "D:\\tools\\msys64\\mingw64\\bin\\gdb.exe",
+            "debuggerArgs": ["-quiet"],
+            "commandsBeforeExec": [],
+            "program": "${workspaceRoot}/bin/win64/cmdLnParser_demo.exe",
+            "preLaunchTask": "x64 debug",
+            "cwd": "${workspaceRoot}/bin/win64/"
+        }
+    ]
+}

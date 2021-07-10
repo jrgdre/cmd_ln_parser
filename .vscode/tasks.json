@@ -1,0 +1,54 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+	  {
+		"label": "x64 debug",
+		"type": "shell",
+		"problemMatcher": [
+			{
+				"owner": "fpc",
+				"pattern":[
+					{
+						"regexp": "^([a-zA-Z_-]+\\.[a-zA-Z_-]+)(\\()(\\d+)(\\,)(\\d+)(\\) )([a-zA-Z]+)(: )(.*)",
+						"file": 1,
+						"line": 3,
+						"column": 5,
+						"severity": 7,
+						"message": 9
+					}
+				]
+			}
+		],
+		"windows": {
+			"command": "ppcrossx64",
+			"args": [
+				"-gw2",
+				"-godwarfsets",
+				"-O-",
+				"-gh", "-gl",
+				"${workspaceRoot}\\cmdLnParser_demo.pas",
+				"-FE${workspaceRoot}\\bin\\win64",
+				"-FU${workspaceRoot}\\obj\\win64"
+			]
+		},
+		"linux":{
+			"command": "fpc",
+			"args": [
+				"-gw3",
+				"-godwarfsets",
+				"-O-",
+				"-gh", "-gl",
+				"${workspaceRoot}/cmdLnParser_demo.pas",
+				"-FE${workspaceRoot}/bin/linux64",
+				"-FU${workspaceRoot}/obj/linux64"
+			]
+		},
+		"group": {
+		  "kind": "build",
+		  "isDefault": true
+		}
+	  }
+	]
+  }
