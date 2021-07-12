@@ -3,7 +3,7 @@
 Goal of the project is command line argument parser for Pascal programs.
 
 While there are the `GetOpt()`and `GetLongOpts()` functions, somehow I could not
-get them running right. After to much time spent trying, I came to the point of
+get them running right. After too much time spent trying, I came to the point of
 "How hard can it be ..." and this is the result.
 
 ## Build
