@@ -14,6 +14,17 @@
             "program": "${workspaceRoot}/bin/win64/cmdLnParser_demo.exe",
             "preLaunchTask": "x64 debug",
             "cwd": "${workspaceRoot}/bin/win64/"
+        },
+        {
+            "name": "GDB linux 64",
+            "type": "by-gdb",
+            "request": "launch",
+            "debuggerPath": "/usr/bin/gdb",
+            "debuggerArgs": ["-quiet"],
+            "commandsBeforeExec": [],
+            "program": "${workspaceRoot}/bin/linux64/cmdLnParser_demo",
+            "preLaunchTask": "x64 debug",
+            "cwd": "${workspaceRoot}/bin/linux64/"
         }
     ]
 }

@@ -1,2 +1,4 @@
-*.o
-*.ppu
+*
+!ReadMe.md
+!linux64/
+!win64/
